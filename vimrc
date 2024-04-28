@@ -62,5 +62,32 @@ nnoremap <leader><cr> :nohl<cr>
 cnoremap w!! w! sudo tee % > /dev/null
 cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
 
-execute pathogen#infect()
+call plug#begin()
+
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-scriptease'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-dispatch'
+Plug 'vim-airline/vim-airline'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'preservim/nerdtree'
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'mbbill/undotree'
+Plug 'preservim/tagbar'
+
+
+call plug#end()
+
+let g:airline#extensions#tabline#enabled = 1
+
+nnoremap <leader>fe :NERDTreeToggle<cr>
+nnoremap <leader>u :UndotreeToggle<cr>:UndotreeFocus<cr>
+nnoremap <leader>cs :Tagbar<cr>
 
