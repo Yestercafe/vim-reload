@@ -39,7 +39,7 @@ set sc
 set scs
 
 set ts=4
-set sts=4
+set sts=0
 set sw=4
 set ai
 set et
@@ -61,4 +61,6 @@ nnoremap <leader><cr> :nohl<cr>
 
 cnoremap w!! w! sudo tee % > /dev/null
 cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
+
+execute pathogen#infect()
 
