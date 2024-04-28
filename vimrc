@@ -82,6 +82,7 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'mbbill/undotree'
 Plug 'preservim/tagbar'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
