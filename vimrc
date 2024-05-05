@@ -76,7 +76,7 @@ Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-dispatch'
 Plug 'vim-airline/vim-airline'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'mbbill/undotree'
