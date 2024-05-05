@@ -92,3 +92,6 @@ nnoremap <leader>fe :NERDTreeToggle<cr>
 nnoremap <leader>u :UndotreeToggle<cr>:UndotreeFocus<cr>
 nnoremap <leader>cs :Tagbar<cr>
 
+" Disable warning for vim 8.1
+let g:coc_disable_startup_warning = 1
+
